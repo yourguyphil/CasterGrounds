@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SlimeDamage.wav-a60a529c5a6c72bd04e1bc2d7f93739f.sample"
+
+[deps]
+
+source_file="res://Sounds/SlimeDamage.wav"
+dest_files=[ "res://.import/SlimeDamage.wav-a60a529c5a6c72bd04e1bc2d7f93739f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

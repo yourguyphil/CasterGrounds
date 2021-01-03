@@ -1,0 +1,309 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Sprites/Player/NotJace-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/PlayerCamera.gd" type="Script" id=3]
+[ext_resource path="res://Sounds/Dash.wav" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/SlimeDamagePlayer.wav" type="AudioStream" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 19.0113, 29.532 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "Attack"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 7, 8, 9, 10, 11, 12, 13 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Damage"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 17, 17 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.639216 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Dash"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 18, 19, 20 ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "Dead"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 29 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 3 ]
+}
+
+[sub_resource type="Animation" id=6]
+loop = true
+
+[sub_resource type="Animation" id=7]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 15, 16 ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 5, 6 ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+
+[sub_resource type="Animation" id=10]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 31, 32, 33, 34, 35 ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Shield"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 22, 23, 24, 25, 26 ]
+}
+
+[sub_resource type="Animation" id=12]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 3 ]
+}
+
+[sub_resource type="Animation" id=13]
+length = 0.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 14 ]
+}
+
+[node name="Player" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 2147483669
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -0.307037, -0.226044 )
+texture = ExtResource( 1 )
+hframes = 37
+frame = 30
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.136811, -0.694162 )
+shape = SubResource( 1 )
+
+[node name="RightRaycast" type="RayCast2D" parent="."]
+position = Vector2( 12.784, 0.0560646 )
+enabled = true
+cast_to = Vector2( 8, 0 )
+
+[node name="LeftRaycast" type="RayCast2D" parent="."]
+position = Vector2( -8.41155, -0.0276375 )
+enabled = true
+cast_to = Vector2( -13, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
+playback_speed = 1.5
+anims/Attack = SubResource( 2 )
+anims/Damage = SubResource( 3 )
+anims/Dash = SubResource( 4 )
+anims/Dead = SubResource( 14 )
+"anims/Double Jump" = SubResource( 5 )
+anims/Fall = SubResource( 6 )
+anims/Float = SubResource( 7 )
+anims/Idle = SubResource( 8 )
+anims/Jump = SubResource( 9 )
+anims/Run = SubResource( 10 )
+anims/Shield = SubResource( 11 )
+anims/Walk = SubResource( 12 )
+"anims/Wall Slide" = SubResource( 13 )
+
+[node name="FireballShootPosition" type="Position2D" parent="."]
+position = Vector2( 26.2217, 9.80004 )
+
+[node name="PlayerPosition" type="Position2D" parent="."]
+
+[node name="PlayerCamera" type="Camera2D" parent="."]
+position = Vector2( 223.954, -13.8459 )
+current = true
+limit_top = -10000002
+smoothing_enabled = true
+smoothing_speed = 2.0
+drag_margin_left = 0.1
+drag_margin_top = 0.75
+drag_margin_right = 0.1
+drag_margin_bottom = 0.75
+script = ExtResource( 3 )
+
+[node name="ShiftTween" type="Tween" parent="PlayerCamera"]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="E_Cooldown_Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="W_Cooldown_Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="R_Cooldown_Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="E_Animation_Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="ManaRegen_Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="D_Cooldown_Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="DashSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+volume_db = -15.0
+pitch_scale = 3.0
+
+[node name="SlimeDamagePlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
+pitch_scale = 0.83
+[connection signal="grounded_updated" from="." to="PlayerCamera" method="_on_Player_grounded_updated"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

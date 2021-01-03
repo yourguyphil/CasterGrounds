@@ -1,0 +1,385 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Levels/Dungeon/TileSheetDungeon.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.03348, 8.01821 )
+
+[node name="GroundTileSet" type="Node2D"]
+
+[node name="TileSheetDungeonBoxLarge1" type="Sprite" parent="."]
+position = Vector2( 0.0111084, -0.0976639 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonBoxLarge1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonBoxLarge1/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonBoxLarge2" type="Sprite" parent="."]
+position = Vector2( 20.1409, -0.230096 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonBoxLarge2"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonBoxLarge2/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonBoxLarge3" type="Sprite" parent="."]
+position = Vector2( 39.5516, -0.190723 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonBoxLarge3"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonBoxLarge3/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonTall1" type="Sprite" parent="."]
+position = Vector2( 61.1427, -0.0727386 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonTall1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonTall1/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonTall2" type="Sprite" parent="."]
+position = Vector2( 61.6146, 19.6306 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 16, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonTall2"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonTall2/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonTall3" type="Sprite" parent="."]
+position = Vector2( 60.9067, 36.9743 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonTall3"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonTall3/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonHump1" type="Sprite" parent="."]
+position = Vector2( 88.3664, 39.806 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonHump1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonHump1/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonHump5" type="Sprite" parent="."]
+position = Vector2( 106.599, 39.723 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonHump5"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonHump5/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonHump6" type="Sprite" parent="."]
+position = Vector2( 126.242, 39.7932 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonHump6"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonHump6/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonHump7" type="Sprite" parent="."]
+position = Vector2( 146.152, 40.2805 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonHump7"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonHump7/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonHump8" type="Sprite" parent="."]
+position = Vector2( 165.507, 39.9468 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonHump8"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonHump8/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonHump2" type="Sprite" parent="."]
+position = Vector2( 105.859, 21.6364 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonHump2"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonHump2/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonP1" type="Sprite" parent="."]
+position = Vector2( 106.127, -24.8798 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonP1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonP1/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonP2" type="Sprite" parent="."]
+position = Vector2( 126.298, -24.1653 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonP2"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonP2/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonP3" type="Sprite" parent="."]
+position = Vector2( 105.608, -3.30844 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 16, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonP3"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonP3/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeon27" type="Sprite" parent="."]
+position = Vector2( 125.548, -3.4753 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 16, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeon27"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeon27/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonP4" type="Sprite" parent="."]
+position = Vector2( 125.889, -3.4753 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 16, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonP4"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonP4/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonP5" type="Sprite" parent="."]
+position = Vector2( 146.321, -4.05929 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonP5"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonP5/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonHump3" type="Sprite" parent="."]
+position = Vector2( 126.506, 21.8723 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonHump3"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonHump3/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonHump4" type="Sprite" parent="."]
+position = Vector2( 146.887, 22.4623 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonHump4"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonHump4/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonBoxLarge4" type="Sprite" parent="."]
+position = Vector2( 0.494015, 18.4719 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 16, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonBoxLarge4"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonBoxLarge4/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonBoxLarge7" type="Sprite" parent="."]
+position = Vector2( 0.494015, 37.0557 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonBoxLarge7"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonBoxLarge7/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonLong1" type="Sprite" parent="."]
+position = Vector2( -0.158138, 56.2691 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonLong1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonLong1/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonLong2" type="Sprite" parent="."]
+position = Vector2( 19.5897, 56.1907 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonLong2"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonLong2/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonLog3" type="Sprite" parent="."]
+position = Vector2( 38.4098, 56.6238 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonLog3"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonLog3/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonBoxLarge8" type="Sprite" parent="."]
+position = Vector2( 19.8259, 37.4888 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonBoxLarge8"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonBoxLarge8/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonBoxLarge9" type="Sprite" parent="."]
+position = Vector2( 38.5673, 37.5675 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonBoxLarge9"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonBoxLarge9/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonBoxLarge5" type="Sprite" parent="."]
+position = Vector2( 19.9047, 18.5506 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 16, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonBoxLarge5"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonBoxLarge5/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TileSheetDungeonBoxLarge6" type="Sprite" parent="."]
+position = Vector2( 39.1972, 18.4719 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 16, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetDungeonBoxLarge6"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetDungeonBoxLarge6/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )

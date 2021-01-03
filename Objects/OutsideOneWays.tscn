@@ -1,0 +1,277 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Sprites/Levels/Outdoors/TileSheetOutside.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.0742, 2.03244 )
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( -15.5302, -1.46117 )
+b = Vector2( -0.415802, 6.49377 )
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( -6.42084, -3.91573 )
+b = Vector2( 6.14166, 2.77177 )
+
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( 9.60403, -5.60001 )
+b = Vector2( -4.7388, 2.62889 )
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( 11.8412, -5.25972 )
+b = Vector2( -6.72012, 6.21823 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 7.2869, 2.29218 )
+
+[sub_resource type="SegmentShape2D" id=7]
+a = Vector2( 7.59848, -4.543 )
+b = Vector2( -5.87183, 3.73526 )
+
+[sub_resource type="SegmentShape2D" id=8]
+a = Vector2( -2.00711, -3.12317 )
+b = Vector2( 7.41809, 4.26816 )
+
+[node name="OutsideOneWays" type="Node2D"]
+
+[node name="TileSheetOutsideOneWay" type="Sprite" parent="."]
+position = Vector2( 252.067, 217.822 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay/StaticBody2D"]
+position = Vector2( -0.0338439, -5.04234 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay2" type="Sprite" parent="."]
+position = Vector2( 214.191, 221.493 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay2/StaticBody2D"]
+position = Vector2( -0.139023, -5.01754 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay3" type="Sprite" parent="."]
+position = Vector2( 163.133, 218.156 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay3/StaticBody2D"]
+position = Vector2( -0.26947, -5.19197 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay4" type="Sprite" parent="."]
+position = Vector2( 231.78, 248.356 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay4/StaticBody2D"]
+position = Vector2( -0.0278473, -5.32274 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay5" type="Sprite" parent="."]
+position = Vector2( 240.554, 194.295 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay5/StaticBody2D"]
+position = Vector2( -0.139023, -4.9341 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay6" type="Sprite" parent="."]
+position = Vector2( 207.025, 188.72 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay6/StaticBody2D"]
+position = Vector2( 0.111267, -5.18438 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay7" type="Sprite" parent="."]
+position = Vector2( 202.845, 245.353 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay7/StaticBody2D"]
+position = Vector2( 0.027832, -5.4341 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay14" type="Sprite" parent="."]
+position = Vector2( 345.526, 232.505 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay14/StaticBody2D"]
+position = Vector2( 7.4108, -2.86607 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay15" type="Sprite" parent="."]
+position = Vector2( 359.42, 248.267 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay15/StaticBody2D"]
+position = Vector2( -2.3046, 6.70186 )
+shape = SubResource( 3 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay16" type="Sprite" parent="."]
+position = Vector2( 399.833, 168.984 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay16/StaticBody2D"]
+position = Vector2( 0.629126, 7.19606 )
+shape = SubResource( 4 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay17" type="Sprite" parent="."]
+position = Vector2( 431.903, 151.418 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay17/StaticBody2D"]
+position = Vector2( -1.6091, -1.03427 )
+shape = SubResource( 5 )
+
+[node name="TileSheetOutsideOneWay20" type="Sprite" parent="."]
+position = Vector2( 385.856, 184.026 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 32, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay20"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay20/StaticBody2D"]
+position = Vector2( -1.75717, -0.0548346 )
+shape = SubResource( 5 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay21" type="Sprite" parent="."]
+position = Vector2( 429.811, 270.03 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay21"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay21/StaticBody2D"]
+position = Vector2( 0.207032, -4.8338 )
+shape = SubResource( 6 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay8" type="Sprite" parent="."]
+position = Vector2( 274.425, 192.794 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 16, 16 )
+
+[node name="TileSheetOutsideOneWay9" type="Sprite" parent="."]
+position = Vector2( 297.451, 192.46 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 0, 16, 16 )
+
+[node name="TileSheetOutsideOneWay10" type="Sprite" parent="."]
+position = Vector2( 329.488, 195.13 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 16, 16, 16 )
+
+[node name="TileSheetOutsideOneWay11" type="Sprite" parent="."]
+position = Vector2( 348.676, 195.13 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 16, 16, 16 )
+
+[node name="TileSheetOutsideOneWay12" type="Sprite" parent="."]
+position = Vector2( 278.43, 248.356 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 48, 16, 16 )
+
+[node name="TileSheetOutsideOneWay13" type="Sprite" parent="."]
+position = Vector2( 312.689, 264.399 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 48, 16, 16 )
+
+[node name="TileSheetOutsideOneWay18" type="Sprite" parent="."]
+position = Vector2( 401.877, 185.017 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay18"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay18/StaticBody2D"]
+position = Vector2( -5.26932, -6.64162 )
+shape = SubResource( 7 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay19" type="Sprite" parent="."]
+position = Vector2( 444.833, 228.744 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileSheetOutsideOneWay19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileSheetOutsideOneWay19/StaticBody2D"]
+position = Vector2( 2.3811, -6.05197 )
+shape = SubResource( 8 )
+one_way_collision = true
+
+[node name="TileSheetOutsideOneWay22" type="Sprite" parent="."]
+position = Vector2( 479.816, 269.132 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 16, 16, 16 )
+
+[node name="TileSheetOutsideOneWay23" type="Sprite" parent="."]
+position = Vector2( 512.38, 274.795 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 16, 16, 16 )

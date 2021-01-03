@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Levels/Dungeon/TileSheetDungeon.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.07385, 2.74257 )
+
+[node name="OneWayTiles" type="Node2D"]
+
+[node name="OneWayTileLeft" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="OneWayTileLeft"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OneWayTileLeft/StaticBody2D"]
+position = Vector2( -0.0349026, -5.3917 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="OneWayTileLeft2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="OneWayTileLeft2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OneWayTileLeft2/StaticBody2D"]
+position = Vector2( -0.0349026, -5.3917 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="OneWayTileLeft3" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="OneWayTileLeft3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OneWayTileLeft3/StaticBody2D"]
+position = Vector2( -0.0349026, -5.3917 )
+shape = SubResource( 1 )
+one_way_collision = true

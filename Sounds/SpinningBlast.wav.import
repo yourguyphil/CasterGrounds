@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SpinningBlast.wav-f722c3d7e2600b072c5135ce7b8b3fac.sample"
+
+[deps]
+
+source_file="res://Sounds/SpinningBlast.wav"
+dest_files=[ "res://.import/SpinningBlast.wav-f722c3d7e2600b072c5135ce7b8b3fac.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

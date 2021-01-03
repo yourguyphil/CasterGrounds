@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Player/HealthBar.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Player/ManaBar.png" type="Texture" id=2]
+
+[node name="HPBar" type="HBoxContainer"]
+margin_right = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ManaBar" type="Sprite" parent="."]
+position = Vector2( 305.411, 429.24 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+
+[node name="HealthBar" type="Sprite" parent="."]
+position = Vector2( 111.816, 429.951 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )

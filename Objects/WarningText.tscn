@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://NiceFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/WarningText.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Idle"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/AnimationPlayerOOM/Label14:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.189165 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "OOMAnimation"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/AnimationPlayerOOM/Label14:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="WarningText" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayerOOM" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
+anims/Idle = SubResource( 1 )
+anims/OOMAnimation = SubResource( 2 )
+
+[node name="Label14" type="Label" parent="AnimationPlayerOOM"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 268.92
+margin_top = 165.429
+margin_right = 420.92
+margin_bottom = 178.429
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.898039, 0.109804, 0.2, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Out Of Mana"
+__meta__ = {
+"_edit_use_anchors_": false
+}

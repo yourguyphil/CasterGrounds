@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Magical Adventure 8 Bit Game Music - Mana Trail By HeatleyBros.wav-8daaeef697df28c7d89260bb601dbd16.sample"
+
+[deps]
+
+source_file="res://Sounds/Magical Adventure 8 Bit Game Music - Mana Trail By HeatleyBros.wav"
+dest_files=[ "res://.import/Magical Adventure 8 Bit Game Music - Mana Trail By HeatleyBros.wav-8daaeef697df28c7d89260bb601dbd16.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
