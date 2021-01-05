@@ -85,10 +85,6 @@ __meta__ = {
 }
 
 [node name="CreditsButton" type="TextureButton" parent="Menu"]
-anchor_left = 0.0025
-anchor_top = 0.010101
-anchor_right = 0.0025
-anchor_bottom = 0.010101
 margin_top = 68.0
 margin_right = 200.0
 margin_bottom = 99.0
