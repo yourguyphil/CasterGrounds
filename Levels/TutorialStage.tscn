@@ -321,10 +321,10 @@ __meta__ = {
 }
 
 [node name="Label6" type="Label" parent="BunchOfText"]
-margin_left = 1955.0
-margin_top = 75.0
-margin_right = 2192.0
-margin_bottom = 104.0
+margin_left = 1920.5
+margin_top = 65.0
+margin_right = 2157.5
+margin_bottom = 94.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
