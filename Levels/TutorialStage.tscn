@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Objects/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/OutsideTiles.tres" type="TileSet" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://Objects/KingSlime.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Sprites/ABunchOfClouds.png" type="Texture" id=21]
 [ext_resource path="res://Objects/WarningText.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Objects/TouchUI.tscn" type="PackedScene" id=23]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 660.11, 716.376 )
@@ -621,10 +622,10 @@ hp = 2
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Interface" parent="CanvasLayer" instance=ExtResource( 8 )]
-margin_left = 436.0
-margin_top = 206.0
-margin_right = 476.0
-margin_bottom = 246.0
+margin_left = 441.244
+margin_top = -110.143
+margin_right = 481.244
+margin_bottom = -70.1428
 
 [node name="Value" parent="CanvasLayer/Interface/AbilityButtonW/Counter" index="0"]
 margin_right = 23.0
@@ -763,6 +764,10 @@ shape = SubResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boundry2"]
 position = Vector2( 9162.73, -516.519 )
 shape = SubResource( 2 )
+
+[node name="TouchUI" type="CanvasLayer" parent="."]
+
+[node name="TouchUI" parent="TouchUI" instance=ExtResource( 23 )]
 [connection signal="block_used" from="Player" to="CanvasLayer/Interface" method="_on_Player_block_used"]
 [connection signal="health_changed" from="Player" to="CanvasLayer/Interface" method="_on_Player_health_changed"]
 [connection signal="magicaian_basic_blast_used" from="Player" to="CanvasLayer/Interface" method="_on_Player_magicaian_basic_blast_used"]
