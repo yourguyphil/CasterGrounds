@@ -445,6 +445,7 @@ shape = SubResource( 1 )
 
 [node name="Enemy6" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 3265.23, 202.922 )
+can_jump = false
 
 [node name="Enemy5" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 2962, 308 )
@@ -460,9 +461,11 @@ position = Vector2( 1657.68, 288.173 )
 
 [node name="Enemy3" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 3476, 138 )
+can_jump = false
 
 [node name="Enemy7" parent="AlotOfEnemies" instance=ExtResource( 6 )]
-position = Vector2( 3734, 141 )
+position = Vector2( 3733.55, 141 )
+can_jump = false
 
 [node name="Enemy8" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 3927, 302 )
@@ -477,22 +480,28 @@ position = Vector2( 5213, 242 )
 position = Vector2( 5944, 241 )
 
 [node name="Enemy12" parent="AlotOfEnemies" instance=ExtResource( 6 )]
-position = Vector2( 7794, 354 )
+position = Vector2( 7794, 353.555 )
+can_jump = false
 
 [node name="Enemy13" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 8344, 591 )
+can_jump = false
 
 [node name="Enemy14" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 8263, 1 )
+can_jump = false
 
 [node name="Enemy15" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 8106, 2 )
+can_jump = false
 
 [node name="Enemy16" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 8432, 1004 )
+can_jump = false
 
 [node name="Enemy17" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 8077, 1006 )
+can_jump = false
 
 [node name="Enemy18" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 7981, 1644 )
@@ -501,16 +510,19 @@ hp = 3
 size = Vector2( 2, 2 )
 
 [node name="Enemy19" parent="AlotOfEnemies" instance=ExtResource( 6 )]
-position = Vector2( 8237, 1641 )
+position = Vector2( 8237, 1639.74 )
+speed = 60
 hp = 3
 
 [node name="Enemy20" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 8569, 1640 )
-hp = 2
+speed = 90
+hp = 3
 
 [node name="Enemy21" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 8792, 1634 )
-hp = 2
+speed = 40
+hp = 3
 
 [node name="Enemy22" parent="AlotOfEnemies" instance=ExtResource( 6 )]
 position = Vector2( 9187, 1651 )
