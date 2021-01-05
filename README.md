@@ -9,3 +9,6 @@ https://yourguyphil.itch.io/castergrounds
 
 
 See in-game credits page for shoutouts and credits
+
+Trello Board to view upcomming features and bug fixes
+https://trello.com/b/ChgOpbQ5/castergrounds
